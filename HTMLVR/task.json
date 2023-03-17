@@ -1,0 +1,141 @@
+{
+    "task": {
+      "name": "PROVA_FINALE_TELEMEDICINA",
+      "description": "",
+      "status": "IN_PROGRESS",
+      "position": "",
+      "contact": {
+        "phone": "",
+        "fullName": "Unknown",
+        "email": ""
+      },
+      "company": {
+        "name": "ITS"
+      },
+      "workspace": "LA.Province",
+      "assignee": "Marco Zanella",
+      "taskDocs": "true",
+      "toolDocs": "true",
+      "date": "",
+      "subtasks": [
+        {
+          "name": "1)Apertura finestre di revisione",
+          "description": "",
+          "tools": [
+            {
+              "lastChange": "22 Jun 2022 13:30:16 GMT",
+              "label": "fare una foto allo schermo acceso",
+              "type": "Photo",
+              "value": "step-1/tool-3-photo/2022-06-22_133016_Marco-Zanella_photo.jpeg",
+              "operator": "Marco Zanella"
+            },
+            {
+              "lastChange": "22 Jun 2022 13:34:46 GMT",
+              "label": "Fare foto alle voci 【Rivedi】",
+              "type": "Photo",
+              "value": "step-1/tool-6-photo/2022-06-22_133446_Marco-Zanella_photo.jpeg",
+              "operator": "Marco Zanella"
+            },
+            {
+              "lastChange": "22 Jun 2022 13:27:59 GMT",
+              "label": "Conferma inizio attività",
+              "type": "Option list",
+              "value": "si",
+              "operator": "Marco Zanella"
+            }
+          ]
+        },
+        {
+          "name": "2)Revisione grafico tendenze",
+          "description": "Revisione grafico tendenze",
+          "tools": [
+            {
+              "lastChange": "22 Jun 2022 13:36:15 GMT",
+              "label": "Fare video seguendo i comandi",
+              "type": "Video",
+              "value": "step-2/tool-1-video/2022-06-22_133615_Marco-Zanella_video.mp4",
+              "operator": "Marco Zanella"
+            }
+          ]
+        },
+        {
+          "name": "3)Selezione del parametro di revisione",
+          "description": "",
+          "tools": [
+            {
+              "lastChange": "22 Jun 2022 13:38:52 GMT",
+              "label": "Hai selezionato un parametro?",
+              "type": "Option list",
+              "value": "si",
+              "operator": "Marco Zanella"
+            },
+            {
+              "lastChange": "22 Jun 2022 13:39:06 GMT",
+              "label": "Fare foto al trend tabulare",
+              "type": "Photo",
+              "value": "step-3/tool-3-photo/2022-06-22_133906_Marco-Zanella_photo.jpeg",
+              "operator": "Marco Zanella"
+            }
+          ]
+        },
+        {
+          "name": "4)Consultazione  grafico tendenze",
+          "description": "Attenzione si può consultare il grafico per più intervalli di tempo",
+          "tools": [
+            {
+              "lastChange": "22 Jun 2022 13:40:05 GMT",
+              "label": "Fare foto ai grafici che vedi",
+              "type": "Photo",
+              "value": "step-4/tool-6-photo/2022-06-22_134005_Marco-Zanella_photo.jpeg",
+              "operator": "Marco Zanella"
+            }
+          ]
+        },
+        {
+          "name": "5)Revisione e stampa della tabella tendenza",
+          "description": "",
+          "tools": [
+            {
+              "lastChange": "22 Jun 2022 13:40:30 GMT",
+              "label": "Hai Stampato?",
+              "type": "Option list",
+              "value": "si",
+              "operator": "Marco Zanella"
+            },
+            {
+              "lastChange": "22 Jun 2022 13:41:10 GMT",
+              "label": "Fare foto allo schermo",
+              "type": "Photo",
+              "value": "step-5/tool-4-photo/2022-06-22_134110_Marco-Zanella_photo.jpeg",
+              "operator": "Marco Zanella"
+            }
+          ]
+        },
+        {
+          "name": "6)Revisione dei risultati della misurazione NIBP",
+          "description": "",
+          "tools": []
+        },
+        {
+          "name": "7) Revisione degli allarmi dei parametri",
+          "description": "",
+          "tools": [
+            {
+              "lastChange": "22 Jun 2022 13:44:06 GMT",
+              "label": "Hai visionato gli allarmi?",
+              "type": "Option list",
+              "value": "si",
+              "operator": "Marco Zanella"
+            },
+            {
+              "lastChange": "22 Jun 2022 13:44:47 GMT",
+              "label": "Fare foto agli allarmi?",
+              "type": "Photo",
+              "value": "step-7/tool-4-photo/2022-06-22_134447_Marco-Zanella_photo.png",
+              "operator": "Marco Zanella"
+            }
+          ]
+        }
+      ]
+    }
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR ALEX GNAVI</title>
+</head>
+<body bgcolor="lightgreen">
+    <H1>dati virtual reality Gnavi Alex</H1>
+    <h2 id="task">xxx task name xxx</h2>
+    <h3>carica dati <button onclick="loadjson()">LOAD JSON</button></h3>
+    <div id="datijson">
+        ------
+
+    
+    </div>
+
+    
+</body>
+</html>
+<script>
+    //funzione per leggere i dati json
+    //funzione per prepare html basato su dati json
+    function loadjson(){
+        //fare un fetch per caricare un file json da web
+        //i dati che arrivano sono json e li devo mandare 
+        //ad una funzione che riesca a leggere i singoli campi
+        fetch("json/dati.json")
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            preparahtml(data);
+        })
+        .catch(errore => {
+            alert("errore:  "+errore.toString())
+        })
+    }
+
+    function preparahtml(json){
+        let tit=json.task.name;
+        document.querySelector("#taskname").innerHTML=tit;
+        let subtasks=json.task.subtasks;
+        let datijson="";
+        for (subtask of subtasks){
+            //singola attività fatta da più step
+            let titolo = subtask.name
+            let tools=subtasks.tools;
+            let table="<table border='1' width='100%'>";
+            for (tool of tools){
+                let riga="<tr><td>"+tool.label + "</td><td>"
+                    +tool.lastChange + "</td><td>"
+                    +tool.type + "</td><td width='50%'>";
+                if (tool.type="Photo")
+                    riga +="<img src=''"+tool.value +"</td></tr>"
+                 else
+                        riga+=tool.value +"</td></tr>"
+                if (tool.type="video")
+                    riga +="<video controls src='' poster='' width='620' type='video/mp4'> "+tool.value +"</td></tr>"
+                 else
+                        riga+=tool.value +"</td></tr>"
+                table+=riga;
+               
+
+            
+            }
+            table+="</table>"
+            datijson+="<h2>"+titolo+"</h2>"+table;
+        }
+        // finiti i subtask inserisco html in div dati json
+        document.querySelector("#datijson").innerHTML=datijson
+        
+    }
+</script>
+
+
+
